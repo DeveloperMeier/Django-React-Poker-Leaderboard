@@ -77,7 +77,10 @@ const orderedListStyle = Object.assign({}, roundedStyle, {listStyleType: 'decima
 
 # Future Adaptations
 1. Normalize the database
-    1. `winnings` should be calculated off of a `transactions` table counting all wins and losses foreign keyed to `Winner`/`User` by their UserID
+    1. Options
+        1. `winnings` should be calculated off of a `transactions` table counting all wins and losses foreign keyed to `Winner`/`User` by their UserID
+        2. `winnings` would be separated into a `wins` and `losses` table, and the `winnings` should equal `SELECT SUM(amount) from winnings where winnerId = userId` minus `SELECT SUM(amount) from losses where loserId = userId`. (Better auditability)
+    
 
 # Screenshots
 - Example Leaderboard with data
