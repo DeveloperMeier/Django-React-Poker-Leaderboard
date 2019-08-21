@@ -30,7 +30,7 @@
 - Exposed api routes:
     - `/api/leaderboard/`
     - `/api/leadboard/:id:/`
-- Admin functionality exposed at:
+- Admin functionality exposed on port `8000` at:
     - `/admin/`
     - `/admin/leaderboard/`
     - `/admin/leaderboard/:id/`
@@ -78,5 +78,20 @@ const orderedListStyle = Object.assign({}, roundedStyle, {listStyleType: 'decima
 # Future Adaptations
 1. Normalize the database
     1. `winnings` should be calculated off of a `transactions` table counting all wins and losses foreign keyed to used by their ID
+
+# Screenshots
+- Example Leaderboard with data
+![With Data](screenshots/leaderboard_with_sample_data.png)
+- Click on Someone
+![Open Edit Dialogue](screenshots/edit_russian_player.png)
+- Change their winnings
+![Modified Winnings](screenshots/russian_player_to_3_dollars.png)
+- Save and the board re-orders
+![Board reordered](screenshots/board_reorders.png)
+- Click someone else and change their country
+![Open Edit Dialogue Again](screenshots/us_players_country.png)
+- The flag auto-updates if a recognized country code was used
+![Flag updated](screenshots/flag_updates.png)
+
 
 
