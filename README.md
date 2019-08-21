@@ -20,10 +20,10 @@
 - utilizes the Django-rest-framework to auto generate CRUD methods. Example usage in `backend/urls.py`
 - Django models defined in `backend/leaderboard/models.py`
 - Admin backend available for modifying sqlite entries
-    . Generate a superuser with `python3.6 backend/manage.py createsuperuser`
+    - Generate a superuser with `python3.6 backend/manage.py createsuperuser`
 - Exposed api routes:
-    . `/api/leaderboard/`
-    . `/api/leadboard/:id:/`
+    - `/api/leaderboard/`
+    - `/api/leadboard/:id:/`
 - Front-end utilized these routes to fetch, update, and create leaderboard entries.
 - Front-end uses the `axios` library to hit the backend.
 - Calls are proxied via `"proxy": "http://localhost:8000"` in `frontend/package.json`
