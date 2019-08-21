@@ -89,7 +89,7 @@ const orderedListStyle = Object.assign({}, roundedStyle, {listStyleType: 'decima
 - Save and the board re-orders
 ![Board reordered](screenshots/board_reorders.png)
 - Click someone else and change their country
-![Open Edit Dialogue Again](screenshots/us_players_country.png)
+![Open Edit Dialogue Again](screenshots/change_us_players_country.png)
 - The flag auto-updates if a recognized country code was used
 ![Flag updated](screenshots/flag_updates.png)
 
