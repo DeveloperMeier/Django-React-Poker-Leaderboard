@@ -1,10 +1,10 @@
 # React/Django Leaderboard Application
 
-## Same leaderboard demo with a Django backend and React front-end.
+- Sample leaderboard demo with a Django backend and React front-end.
 
-### Backend served out of `backend` directory. Built with Python3.6
+- Backend served out of `backend` directory. Built with Python3.6
 
-### Frontend hosted out of `frontend` directory. Built with React, Bootstrap, Reactstrap, and react-country-flag
+- Frontend hosted out of `frontend` directory. Built with React, Bootstrap, Reactstrap, and react-country-flag
 
 # Run the Backend
 1. `./backend/run.sh` (requires python 3.6 as `python3.6` executeable somewhere in the users $PATH)
