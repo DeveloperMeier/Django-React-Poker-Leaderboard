@@ -6,8 +6,14 @@
 
 - Frontend hosted out of `frontend` directory. Built with React, Bootstrap, Reactstrap, and react-country-flag
 
-# Run the Backend
+# Run the Backend Automatically
 1. `./backend/run.sh` (requires python 3.6 as `python3.6` executeable somewhere in the users $PATH)
+
+## Or Manually
+1. `cd backend`
+2. `python3.6 -m pip install -r Requirements.txt`
+3. `python3.6 manage.py runserver`
+
 
 # Run the frontend
 1. `cd frontend`
@@ -24,6 +30,10 @@
 - Exposed api routes:
     - `/api/leaderboard/`
     - `/api/leadboard/:id:/`
+- Admin functionality exposed at:
+    - `/admin/`
+    - `/admin/leaderboard/`
+    - `/admin/leaderboard/:id/`
 - Front-end utilized these routes to fetch, update, and create leaderboard entries.
 - Front-end uses the `axios` library to hit the backend.
 - Calls are proxied via `"proxy": "http://localhost:8000"` in `frontend/package.json`
@@ -63,6 +73,10 @@ const orderedListStyle = Object.assign({}, roundedStyle, {listStyleType: 'decima
     })
     return formatter.format(num)
   }
-  ```
+```
+
+# Future Adaptations
+1. Normalize the database
+    1. `winnings` should be calculated off of a `transactions` table counting all wins and losses foreign keyed to used by their ID
 
 
